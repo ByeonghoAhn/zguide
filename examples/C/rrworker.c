@@ -23,7 +23,7 @@ int main (void)
         sleep (1);
 
         //  Send reply back to client
-        s_send (responder, "World");
+        s_send (&responder, "World");
     }
     //  We never get here, but clean up anyhow
     zmq_close (responder);
